@@ -50,7 +50,7 @@ public class RuleTester {
             TODO: Add a rule where if the string starts with the string "NP", the result would be length of the string
             * */
             rules.add(new Rule<>(
-                    i -> i.substring(0, 2).equals("NP"),
+                    i -> i.startsWith("NP"),
                     String::length
             ));
 
