@@ -24,7 +24,7 @@ interface MergeStrategy<U> {
 
     // !!
     // THIS DOESN'T HAVE TO BE A "BiFunction Supplier"!!!
-    // Instead, write this function as T<U> applyStrategy(U left, U right)
+    // Instead, write this function as U applyStrategy(U left, U right)
     // which is a BiFunction on its own
     BiFunction<U, U, U> applyStrategy();
 
