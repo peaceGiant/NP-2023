@@ -1,4 +1,4 @@
-package Zadachi.Zad77; 
+package Zadachi.Zad77;
 
 import java.util.*;
 import java.util.stream.Collectors;
