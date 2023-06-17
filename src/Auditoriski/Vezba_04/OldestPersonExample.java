@@ -15,7 +15,7 @@ public class OldestPersonExample {
 
         int oldest_age = lines.stream()
                 .mapToInt(i -> Integer.parseInt(i.split("\\s+")[1]))
-                .reduce(0, Math::max);
+                .max().orElse(0);
         System.out.println(oldest_age);
 
         String oldest_line = lines.stream()
